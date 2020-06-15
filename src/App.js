@@ -58,7 +58,7 @@ export class App extends Component {
         <Show/>
         <Num/>
         <Button className='Button' primary onClick={() => this.props.setname("I am Ironman")}>changeName</Button>
-        {/* <Link to = '/home'><Button >Normal</Button></Link> */}
+        <Link to = '/home'><Button >Normal</Button></Link>
         <Button2 onClick={()=>this.props.history.push('/home')}>Button2</Button2>
         <Button  onClick={()=>this.setState({Redirect:true})}>New</Button>
         <a href ='/home'><Button>Newer</Button></a> 
