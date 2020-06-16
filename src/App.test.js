@@ -1,9 +1,10 @@
 import React from 'react';
-import { App, mapStatetoProps, mapDispatchtoProps, Button } from './App';
+import { App, mapStatetoProps, mapDispatchtoProps, Button,Wrapper } from './App';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import {Title} from './App'
 
 Enzyme.configure({adapter : new Adapter()})
 
@@ -34,6 +35,14 @@ it('button click', () => {
   expect(setname).toHaveBeenCalledTimes(2)
 
 });
+
+it('Wrapp styled', () =>{
+const wrapp = shallow(<Wrapper/>);
+const tree = renderer.create(wrapp).toJSON();
+expect(tree).toHaveStyleRule('background','papayawhip')
+
+})
+
 
 // describe('Test Button component', () => {
 //   it('Test click event', () => {
