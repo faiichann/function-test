@@ -12,12 +12,12 @@ export const Input = styled.input`
     font-size:30px;
     color:rosybrown;
 `;
-const P = styled.p`
+export const P = styled.p`
 font-size:40px;
 color:rosybrown;
 
 `;
-const Num = props =>(
+export const Num = props =>(
     <div>
         <P>People who:{props.age} type something...</P>
         <Input style={{ width:"50%",label:"input"}}></Input>

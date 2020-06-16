@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as R from 'ramda';
 // import {Icon,ProgressBar} from '@appman/seles';
 
-const add = R.add(2)
+export const add = R.add(2)
 const dec = R.subtract(R.__, 10)
 const de = R.subtract(5)
 const dec1 = R.subtract(10, R.__)

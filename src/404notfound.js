@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Redirect} from 'react-router-dom';
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   /* Adapt the colors based on primary prop */
   /**ส่งprops เชคว่าเป็น primary หรือไม่ให้แสดงผล ถ้าไม่ :  */
   background: ${props => props.primary ? "palevioletred" : "white"}; 
