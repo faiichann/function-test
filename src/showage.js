@@ -2,13 +2,13 @@ import React from 'react';
 import Withage from './Withage';
 import styled from 'styled-components';
 
-const H1 = styled.h1`
+export const H1 = styled.h1`
 color: salmon;
 font-size:35px;
 text-shadow: pink;
 `;
 
- const Show = props =>(
+ export const Show = props =>(
     <div>
         <H1>HOC I am {props.age} year old.</H1>
     </div>

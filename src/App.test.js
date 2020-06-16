@@ -1,5 +1,5 @@
 import React from 'react';
-import { App, mapStatetoProps, mapDispatchtoProps, Button,Wrapper } from './App';
+import { App, mapStatetoProps, mapDispatchtoProps,Wrapper} from './App';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
